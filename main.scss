@@ -1,0 +1,62 @@
+@import "scss/variables";
+@import "scss/normalize";
+@import "scss/generic";
+
+.c-clock {
+  background-color: $color-blue-dark;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.clock__wrapper {
+  background-color: $color-white;
+  border-radius: 50%;
+  height: 85%;
+  width: 85%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock__pointers {
+  position: relative;
+}
+
+.clock__holder {
+  background-color: $color-blue-dark;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.clock__pointer {
+  border-radius: 4px;
+  position: absolute;
+}
+
+.clock__pointer-seconds {
+  background-color: $color-red;
+  height: 140px;
+  width: 3px;
+  transform: translateY(70px);
+  border-radius: 0;
+}
+
+.clock__pointer-minutes {
+  background-color: $color-grey;
+  height: 120px;
+  width: 5px;
+  transform: translateY(60px);
+}
+
+.clock__pointer-hours {
+  background-color: $color-black;
+  height: 100px;
+  width: 6px;
+  transform: translateY(50px);
+}

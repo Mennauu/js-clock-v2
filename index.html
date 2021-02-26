@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl-NL" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content="It's a clock!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="disabled-adaptations" content="watch">
+    <title>JavaScript Clock v2</title>
+    <link rel="stylesheet" href="main.css"/>
+  </head>
+
+  <body>
+    <main id="content" role="main">
+
+      <div class="c-clock">
+        <div class="clock__wrapper">
+          <div class="clock__holder"></div>
+          <div class="clock__pointers">
+            <div class="clock__pointer clock__pointer-seconds" js-hook-clock-seconds></div>
+            <div class="clock__pointer clock__pointer-minutes" js-hook-clock-minutes></div>
+            <div class="clock__pointer clock__pointer-hours" js-hook-clock-hours></div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
